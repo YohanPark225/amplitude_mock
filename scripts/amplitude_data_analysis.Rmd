@@ -28,7 +28,7 @@ library(tidyr)
 
 event_logs <- read.csv("C:/Users/yohan/OneDrive/문서/GitHub/amplitude_mock/data/amplitude_mock_data.csv", stringsAsFactors = FALSE)
 
-# Let's first take a look at 
+# Let's first take a look at how our users perform overall activities with the app during the analysis period.
 
 event_logs %>%
   mutate(event_date = as.Date(event_time)) %>%
